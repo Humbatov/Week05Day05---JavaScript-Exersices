@@ -23,20 +23,30 @@
   }
   // display();
     // Second question
-    function gcd(a, b){
+    function gcd(a, b,c){
       if (a>b) {
         x=b;
         b=a;
         a=x;
       }
       for (var i = 0; i <= a; i++) {
-        if (a%i  == 0 && b%i == 0) {
+        if (a%i  == 0 && b%i == 0 && c%i == 0) {
           w=i;
         }
       }
       console.log(w);
     }
-
+//  Seventh question
+function chess(){
+  var a=2;
+  var d=[1];
+  for (var i = 0; i < 64; i++) {
+    document.write('<p>'+ (i+1) +'-ci xanadaki bugda sayi ' + d[i] + ' ededdir</p>');
+    d[i+1]=a
+    a=(a*2);
+  }
+}
+chess();
       </script>
 </body>
 </html>
