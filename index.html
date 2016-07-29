@@ -1,0 +1,42 @@
+<!-- Created By Vuqar Namazli & Chingiz Humbatov-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+
+  <script>
+  // First question
+  var a = [[1, 2, 1, 24], [8, 11, 9, 4], [7, 0, 7, 27], [7, 4, 28, 14], [3, 10, 26, 7]];
+  function display(){
+    for (var i = 0; i < 5; i++) {
+      document.write('<p>"row '+ i +'"</p>');
+      for (var j = 0; j < 4; j++) {
+        document.write('<p>"'+ a[i][j] +'"</p>');
+      }
+    }
+  }
+  // display();
+    // Second question
+    function gcd(a, b){
+      if (a>b) {
+        x=b;
+        b=a;
+        a=x;
+      }
+      for (var i = 0; i <= a; i++) {
+        if (a%i  == 0 && b%i == 0) {
+          w=i;
+        }
+      }
+      console.log(w);
+    }
+
+      </script>
+</body>
+</html>
