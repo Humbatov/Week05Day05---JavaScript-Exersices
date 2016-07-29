@@ -40,12 +40,13 @@
 function chess(){
   var a=2;
   var d=[1];
-  var s = d[0];
+  var s = 0;
   for (var i = 0; i < 64; i++) {
     document.write('<p>'+ (i+1) +'-ci xanadaki bugda sayi ' + d[i] + ' ededdir</p>');
+    s= s+d[i];
     d[i+1]=a
     a=(a*2);
-    s= s+d[i+1];
+
   }
   document.write('<p>Cemi: '+ s +' ededdir</p>');
 }
